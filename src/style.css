@@ -1,9 +1,15 @@
 :root {
-    --text-color-light: #d0d6dc;
+    --text-color-light: #DFE4EC;
     --light-brown: #b48450;
-    --darker-brown: #302114;
-    --light-blue: #739bc8;
+    --darker-brown: #624d2b;
+    --light-blue: #B4CBD9;
     --dark-blue: #31425f;
+    --light-yellow: #F5C66E;
+    --primary-dark-blue: #1A2943;
+    --secondary-dark-blue: #2B4062;
+    --off-white: #DFE4EC;
+    --primary-light-blue: #304A6E;
+    --secondary-light-blue: #B4CBD9;
 }
 
 * {
@@ -12,6 +18,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .logo {
@@ -30,7 +37,6 @@
 }
 
 .hero-text {
-    font-family: sans-serif;
     text-align: center;
     color: #d0d6dc;
     top: 50%;
@@ -63,28 +69,28 @@ nav ul {
 nav ul li {
     list-style-type: none;
     display: inline-block;
-    line-height: 4rem;
-    margin: 0 1.5rem;
-}
-
-nav ul li a {
-    color: var(--text-color-light);
-    font-family: sans-serif;
+    padding: auto;
+    margin: 1.5rem;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.5rem;
+    color: #DFE4EC;
+}
+
+nav ul li a {
+    color: #DFE4EC;
 }
 
 nav ul li:hover {
-    background-color: var(--text-color-light);
+    text-decoration: underline;
     transition: all 0.5s ease;
 }
 
 .about-section {
     padding: 5rem;
     text-align: center;
-    background-color: rgb(49, 66, 95);
-    color: var(--text-color-light);
+    background-color: v#DFE4EC;
+    color: #1A2943;
     display: flex;
     justify-content: center;
 }
@@ -96,23 +102,59 @@ nav ul li:hover {
 
 .about-text {
     width: 25rem;
-    margin: 2rem;
+    margin: 0 2rem;
+    text-align: left;
 }
 
 .about-section h1 {
-    font-family: sans-serif;
     font-weight: bold;
     text-align: left;
-    color: var(--light-brown);
+    color: black
+}
+
+.about-section h2 {
+    margin-top: 1rem;
+    font-weight: normal;
 }
 
 .about-section p {
     margin-top: 1rem;
     line-height: 1.25rem;
     font-size: larger;
-    text-align: left;
+    text-align: justify;
 }
 
 .contact-section {
-    background-color: lightgray;
+    padding: 2rem;
+    background-color: #1A2943;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section form h2 {
+    text-align: left;
+    font-family: sans-serif;
+    color: white;
+}
+
+.contact-input {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.contact-section button {
+    background-color: #B4CBD9;
+    font-size: larger;
+    text-transform: uppercase;
+    font-weight: bolder;
 }

@@ -32,16 +32,17 @@
         <div class="about-text">
 
             <h1>About Me!</h1>
-            <p>
+            <h2>
                 Hi! My name is <b>Rafa</b>.
+            </h2>
 
-                <br>
-
+            <p>
                 I'm a brazillian programmer, passionate about communities and diversity.
                 I've graduated in <b>Digital Games</b> in the State University of Bahia (UNEB).
+            </p>
 
-                <br>
-                And I'm currently pursuing a post-graduate degree in <b>Data Science and Artificial Intelligence</b> by
+            <p>
+                I'm currently pursuing a post-graduate degree in <b>Data Science and Artificial Intelligence</b> by
                 the Pontifical University of Rio Grande do Sul.
             </p>
         </div>
@@ -49,11 +50,13 @@
     </div>
 
     <div class="contact-section">
-        <h2>Let's talk!</h2>
         <form action="">
-            Your Name: <input type="text" name="name" id="name">
-            Your Email: <input type="email" name="email" id="email">
-            Your Message: <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <h2>Get in touch!</h2>
+            <input class="contact-input" type="text" name="name" id="name" placeholder="Your Name">
+            <input class="contact-input" type="email" name="email" id="email" placeholder="Your Email">
+            <textarea class="contact-input" name="message" id="message" cols="30" rows="10"
+                placeholder="Message"></textarea>
+            <button class="contact-input" type="submit">Send</button>
         </form>
     </div>
 </body>
