@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 4rem;
+    margin-left: 2.5%;
+}
+
+.hero-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1542359649-31e03cd4d909?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
+    height: 75vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    text-transform: uppercase;
+}
+
+.hero-text h2 {
+    color: lightgray;
+    font-weight: lighter;
+}
+
+nav {
+    background-color: none;
+    height: 4rem;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav ul {
+    float: right;
+    margin-right: 2.5%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    line-height: 4rem;
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav ul li:hover {
+    background-color: aliceblue;
+    transition: all 0.5s ease;
+}
