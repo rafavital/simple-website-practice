@@ -87,32 +87,31 @@ nav ul li:hover {
 }
 
 .about-section {
-    padding: 5rem;
-    text-align: center;
-    background-color: v#DFE4EC;
+    padding: 10%;
+    background-color: #DFE4EC;
     color: #1A2943;
     display: flex;
-    justify-content: center;
 }
 
 .about-section img {
-    width: 20rem;
+    width: 50%;
+    height: 100%;
     border-radius: 5%;
+    margin-right: 5%;
 }
 
 .about-text {
-    width: 25rem;
-    margin: 0 2rem;
+    width: auto;
     text-align: left;
 }
 
-.about-section h1 {
+.about-text h1 {
     font-weight: bold;
     text-align: left;
     color: black
 }
 
-.about-section h2 {
+.about-text h2 {
     margin-top: 1rem;
     font-weight: normal;
 }
@@ -122,6 +121,20 @@ nav ul li:hover {
     line-height: 1.25rem;
     font-size: larger;
     text-align: justify;
+}
+
+
+@media screen and (max-width: 768px) {
+    .about-section {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about-section img {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
 }
 
 .contact-section {
