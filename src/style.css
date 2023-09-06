@@ -1,3 +1,11 @@
+:root {
+    --text-color-light: #d0d6dc;
+    --light-brown: #b48450;
+    --darker-brown: #302114;
+    --light-blue: #739bc8;
+    --dark-blue: #31425f;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -24,7 +32,7 @@
 .hero-text {
     font-family: sans-serif;
     text-align: center;
-    color: white;
+    color: #d0d6dc;
     top: 50%;
     left: 50%;
     position: absolute;
@@ -36,7 +44,7 @@
 }
 
 .hero-text h2 {
-    color: lightgray;
+    color: var(--text-color-light);
     font-weight: lighter;
 }
 
@@ -60,7 +68,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--text-color-light);
     font-family: sans-serif;
     text-transform: uppercase;
     font-weight: bold;
@@ -68,6 +76,43 @@ nav ul li a {
 }
 
 nav ul li:hover {
-    background-color: aliceblue;
+    background-color: var(--text-color-light);
     transition: all 0.5s ease;
+}
+
+.about-section {
+    padding: 5rem;
+    text-align: center;
+    background-color: rgb(49, 66, 95);
+    color: var(--text-color-light);
+    display: flex;
+    justify-content: center;
+}
+
+.about-section img {
+    width: 20rem;
+    border-radius: 5%;
+}
+
+.about-text {
+    width: 25rem;
+    margin: 2rem;
+}
+
+.about-section h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: left;
+    color: var(--light-brown);
+}
+
+.about-section p {
+    margin-top: 1rem;
+    line-height: 1.25rem;
+    font-size: larger;
+    text-align: left;
+}
+
+.contact-section {
+    background-color: lightgray;
 }
