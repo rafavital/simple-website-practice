@@ -1,6 +1,7 @@
 .about-section {
     padding: 10%;
     background-color: #DFE4EC;
+    height: 100vh;
     color: #1A2943;
     display: flex;
 }
