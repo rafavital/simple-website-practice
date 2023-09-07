@@ -66,28 +66,25 @@
 
     </section>
 
-    <div class="projects-section" id="projects">
+    <section class="projects-section" id="projects">
 
-    </div>
+    </section>
 
     <script id="projects-template" type="text/html">
-        <div class="projects">
             <h2>Here are a few of my projects!</h2>
-            <ul>
+            <ul class="projects-container">
                 {%for project in projects%}
-                console.log("aaaa")
-                <li>
-                    <h3>{{project.name}}</h3>
-                <p>{{project.description}}</p>
-            </li>
+                <li class="project">
+                    <img src="{{project.img}}" alt="">
+                    <div class="project-text">
+                        <h3>{{project.name}}</h3>
+                        <p>{{project.description}}</p>
+                        <a href="{{project.link}}">Check it out!</a>
+                    </div>
+                </li>
             {%endfor%}
         </ul>
-            <h3>{{ name | capitalize | prepend: "Welcome to "}}</h3>
-        </div>
 
-        <div id="result">
-
-        </div>
     </script>
 
     <section class="contact-section" id="contact">

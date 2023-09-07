@@ -1,17 +1,20 @@
 [
     {
-        "name": "Project 1",
-        "description": "Description of Project 1.",
-        "link": "https://project1.com"
+        "name": "Plane: Episode 0 - Pilot",
+        "img": "https://img.itch.zone/aW1nLzM1MDY2MDkucG5n/original/87zriO.png",
+        "description": "A shoot 'em up game where you play as a spaceship in a strange planet. \n\n This project was developed in 48h, during a gamejam using Unity",
+        "link": "https://nyunesu.itch.io/plane"
     },
     {
-        "name": "Project 2",
-        "description": "Description of Project 2.",
+        "name": "Foguete",
+        "img": "https://img.itch.zone/aW1nLzM4NTI3MjMucG5n/original/FV6BHB.png",
+        "description": "FOGUETE is an action packed flight arcade game where the only way to destroy your enemies is by turning yourself into a missile and completely losing controls over your movements. You can only regain the reins of your jet once you destroy an enemy.",
         "link": "https://project2.com"
     },
     {
-        "name": "Project 3",
-        "description": "Description of Project 3.",
+        "name": "Ape Space",
+        "img": "https://img.itch.zone/aW1hZ2UvNzc2MDg4LzQzNjM2NTgucG5n/original/8OLEPI.png",
+        "description": "Something's gone awry on the International ApeSpace Station (IaSS), and it's Major Monkey (you) job to fix it! In Ape Space, you must fix the malfuctioning terminals while the ship rotate, and use that same motion to your advantage. Run against time, and combine momentum and the jetpack controls to complete the tasks.",
         "link": "https://project3.com"
     }
 ]
