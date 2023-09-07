@@ -86,6 +86,26 @@ function expand() {
     isShowing = true;
 }
 ```
+
+## Dynamic Content Generation
+I used [LiquidJS](liquidjs.com/) to dynamically fill the Projects section of the website. The projects are defined in [the JSON Projects file](src/projects.json) and with the following script Liquid fills in the information about the projects:
+
+```js
+const engine = new liquidjs.Liquid()
+const projectsSection = document.getElementById('projects')
+
+const template = document.getElementById('projects-template').innerHTML
+
+fetch('src/projects.json')
+    .then(jsonResponse => jsonResponse.json())
+    .then(data => {
+        engine.parseAndRender(template, { projects: data })
+            .then(result => {
+                projectsSection.innerHTML = result
+            })
+    })
+```
+
 ## Future Improvements
 - Add animations to interactions.
 - Improve layout.
