@@ -8,7 +8,7 @@ This is a very simple website I developed using pure HTML/CSS and JS. It was cre
 
 ## Getting Started
 
-To access and interact with my website, [click here]()
+To access and interact with my website, [click here](https://rafavital.github.io/simple-website-practice/)
 
 ## Responsive Design
 ### Navbar
