@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./src/styles/navbarStyle.css">
     <link rel="stylesheet" href="./src/styles/aboutStyle.css">
     <link rel="stylesheet" href="./src/styles/contactStyle.css">
+    <link rel="stylesheet" href="./src/styles/projectsStyle.css">
     <script src="https://kit.fontawesome.com/4463443d89.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/liquidjs/dist/liquid.browser.umd.js"></script>
 
@@ -65,6 +66,30 @@
 
     </section>
 
+    <div class="projects-section" id="projects">
+
+    </div>
+
+    <script id="projects-template" type="text/html">
+        <div class="projects">
+            <h2>Here are a few of my projects!</h2>
+            <ul>
+                {%for project in projects%}
+                console.log("aaaa")
+                <li>
+                    <h3>{{project.name}}</h3>
+                <p>{{project.description}}</p>
+            </li>
+            {%endfor%}
+        </ul>
+            <h3>{{ name | capitalize | prepend: "Welcome to "}}</h3>
+        </div>
+
+        <div id="result">
+
+        </div>
+    </script>
+
     <section class="contact-section" id="contact">
         <form action="">
             <h2>Get in touch!</h2>
@@ -79,6 +104,6 @@
 
 <script src="./src/scripts/navbarScript.js"></script>
 <script src="./src/scripts/aboutScript.js"></script>
-<script src="./src/scripts/liquidSection.js"></script>
+<script src="./src/scripts/projectsScript.js"></script>
 
 </html>
