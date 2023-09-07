@@ -17,9 +17,15 @@
     text-align: left;
 }
 
+.about-header {
+    display: flex;
+    justify-content: space-between;
+}
+
 .about-text h1 {
     font-weight: bold;
     text-align: left;
+    flex: 1;
     color: black
 }
 
@@ -28,11 +34,17 @@
     font-weight: normal;
 }
 
-.about-section p {
-    margin-top: 1rem;
+.about-text p {
+    margin-top: 0.5rem;
     line-height: 1.25rem;
     font-size: larger;
     text-align: justify;
+    display: none;
+}
+
+#about-toggle {
+    text-align: center;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -52,6 +64,8 @@
         width: 100%;
         margin-top: 1rem;
     }
-}
 
+    .about-text h1 {
+        text-align: center;
+    }
 }
