@@ -1,0 +1,1 @@
+const projectsSection = document.querySelector('[type="projects"]');
