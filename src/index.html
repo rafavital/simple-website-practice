@@ -6,27 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="heroStyle.css">
+    <link rel="stylesheet" href="navbarStyle.css">
+    <link rel="stylesheet" href="aboutStyle.css">
+    <link rel="stylesheet" href="contactStyle.css">
+    <script src="https://kit.fontawesome.com/4463443d89.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <div class="hero-container">
-        <nav>
-            <img class="logo" src="../assets/logo.avif" alt="My personal logo">
+    <section class="hero" id="hero">
+        <nav class="navbar">
             <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="navbar-logo">
+                    <img class="logo" src="../assets/logo.avif" alt="My personal logo">
+                </li>
+                <li class="navbar-toggle" id="toggle">
+                    <i class="fa fa-bars"></i>
+                </li>
+                <li class="navbar-link"><a href="#hero">Home</a></li>
+                <li class="navbar-link"><a href="#about">About</a></li>
+                <li class="navbar-link"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-
-        <!-- <img src="../assets/hero_image.avif" alt="Hero section"> -->
-        <div class="hero-text">
-            <h1>Rafa Vital</h1>
-            <h2>Software Developer</h2>
+        <div class="hero-content">
+            <h1 id="name">Rafa Vital</h1>
+            <h2 id="title">Software Developer</h2>
         </div>
-    </div>
+    </section>
 
-    <div class="about-section">
+    <div class="about-section" id="about">
         <!-- <div class="profile-container"> -->
         <img src="../assets/profile.jpeg"
             alt="A profile picture of me! It has golden hour lighting and I'm looking at the horizon to the left. I'm smiling">
@@ -51,7 +60,7 @@
 
     </div>
 
-    <div class="contact-section">
+    <div class="contact-section" id="contact">
         <form action="">
             <h2>Get in touch!</h2>
             <input class="contact-input" type="text" name="name" id="name" placeholder="Your Name">
@@ -64,3 +73,4 @@
 </body>
 
 </html>
+<script src="./navbarScript.js"></script>
